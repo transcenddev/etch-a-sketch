@@ -1,0 +1,57 @@
+:root {
+  --bg-color: #f0f0f0;
+  --text-color: #000;
+  --button-color: #333;
+  --button-bg: #fff;
+  --button-border: #ccc;
+  --square-border: #eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  background-color: var(--button-bg);
+  color: var(--button-color);
+  border: 1px solid var(--button-border);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+}
+
+.square {
+  border: 1px solid var(--square-border);
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
